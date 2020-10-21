@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #e3e3e3;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 350px;
+  height: 300px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+input,
+button[type="submit"] {
+  width: 100%;
+  border: 0.5px solid #e3e3e3;
+}
+input:focus,
+button[type="submit"]:focus {
+  outline: 0.5px solid #e3e3e3;
+}
+input,
+button {
+  font-size: 18px;
+  padding: 10px;
+}
+button:not([type="submit"]) {
+  margin: 5px;
+}
+
+.show {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.error {
+  color: red;
+  padding: 5px 0px;
+  visibility: hidden;
+}
+.lots-item {
+  background-color: #8ce58c;
+  padding: 15px;
+  border: none;
+}
+.lots-item:focus {
+  outline: 0.5px solid #e3e3e3;
+}
+.selected {
+  background-color: #65ddfb;
+}
